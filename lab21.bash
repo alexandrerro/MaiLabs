@@ -12,7 +12,7 @@ if [ ! -d "$1" ]; then
     exit 1
 fi;
 
-# Traverse directory and output subdirectories
+# Обход директорий и вывод поддиректорий
 for file in `find $1 -type d`
 do
     realpath $file;
